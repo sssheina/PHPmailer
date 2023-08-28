@@ -33,16 +33,16 @@ if (!error_get_last()) {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['data']['debug'][] = $str;};
     
     // Настройки вашей почты
-    $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'username'; // Логин на почте
-    $mail->Password   = 'password'; // Пароль на почте
+    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+    $mail->Username   = '_solar_'; // Логин на почте
+    $mail->Password   = 'sVkBnepUzF3f7DEq8Mcz'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('username@yandex.ru', 'Name'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('_solar_@list.ru', 'Veta'); // Адрес самой почты и имя отправителя
     
     // Получатель письма
-    $mail->addAddress('poluchatel@ya.ru');  
-    $mail->addAddress('poluchatel2@gmail.com'); // Ещё один, если нужен
+    $mail->addAddress('sssheina@gmsil.com');  
+    $mail->addAddress('sviatlana@mail.ru'); // Ещё один, если нужен
     
     // Прикрипление файлов к письму
     if (!empty($file['name'][0])) {
